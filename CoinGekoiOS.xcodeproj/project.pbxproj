@@ -14,6 +14,8 @@
 		AB85D0672BD3300400105391 /* CoinGekoiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB85D0662BD3300400105391 /* CoinGekoiOSTests.swift */; };
 		AB85D0712BD3300400105391 /* CoinGekoiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB85D0702BD3300400105391 /* CoinGekoiOSUITests.swift */; };
 		AB85D0732BD3300400105391 /* CoinGekoiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB85D0722BD3300400105391 /* CoinGekoiOSUITestsLaunchTests.swift */; };
+		AB85D0812BD3319C00105391 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB85D0802BD3319C00105391 /* CryptoCurrency.swift */; };
+		AB85D0862BD3329300105391 /* GetGlobalCrytoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB85D0852BD3329300105391 /* GetGlobalCrytoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		AB85D06C2BD3300400105391 /* CoinGekoiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinGekoiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB85D0702BD3300400105391 /* CoinGekoiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGekoiOSUITests.swift; sourceTree = "<group>"; };
 		AB85D0722BD3300400105391 /* CoinGekoiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGekoiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB85D07F2BD3303000105391 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AB85D0802BD3319C00105391 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
+		AB85D0852BD3329300105391 /* GetGlobalCrytoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGlobalCrytoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,7 @@
 		AB85D0492BD3300200105391 = {
 			isa = PBXGroup;
 			children = (
+				AB85D07F2BD3303000105391 /* README.md */,
 				AB85D0542BD3300200105391 /* CoinGekoiOS */,
 				AB85D0652BD3300400105391 /* CoinGekoiOSTests */,
 				AB85D06F2BD3300400105391 /* CoinGekoiOSUITests */,
@@ -94,6 +100,7 @@
 		AB85D0542BD3300200105391 /* CoinGekoiOS */ = {
 			isa = PBXGroup;
 			children = (
+				AB85D0822BD331A600105391 /* Domain */,
 				AB85D0552BD3300200105391 /* CoinGekoiOSApp.swift */,
 				AB85D0572BD3300200105391 /* ContentView.swift */,
 				AB85D0592BD3300300105391 /* Assets.xcassets */,
@@ -125,6 +132,31 @@
 				AB85D0722BD3300400105391 /* CoinGekoiOSUITestsLaunchTests.swift */,
 			);
 			path = CoinGekoiOSUITests;
+			sourceTree = "<group>";
+		};
+		AB85D0822BD331A600105391 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AB85D0842BD3326F00105391 /* UseCases */,
+				AB85D0832BD331AE00105391 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AB85D0832BD331AE00105391 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AB85D0802BD3319C00105391 /* CryptoCurrency.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		AB85D0842BD3326F00105391 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				AB85D0852BD3329300105391 /* GetGlobalCrytoList.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB85D0582BD3300200105391 /* ContentView.swift in Sources */,
+				AB85D0862BD3329300105391 /* GetGlobalCrytoList.swift in Sources */,
+				AB85D0812BD3319C00105391 /* CryptoCurrency.swift in Sources */,
 				AB85D0562BD3300200105391 /* CoinGekoiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
